@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Stone Paper Scissors</h1>
+
+    <form id="playerForm" class="card">
+      <div class="card__text">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="nickname">Nickname:</label>
+      <input type="text" id="nickname" name="nickname"><br><br>
+      <button type="button" class="indexbtn" onclick="savePlayer()">Save</button>
+      </div>
+    </form>
+
+    <button id="instructionButton" class="indexbtn" onclick="showInstructions()">HELP</button>
+
+<div id="instructionText" style="display: none;">
+  <h3>To play rock-paper-scissors, choose either rock, paper, or scissors, simultaneously with your opponent, and determine the winner based on the predefined rules: rock crushes scissors, scissors cuts paper, and paper covers rock.</h3>
+</div>
+
+    <a id="cubic" href="game.html">
+      <span title="All the best!">Play!</span>
+  </a>
+  <script src="app.js"></script>
+  </body>
+</html>
